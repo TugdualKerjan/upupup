@@ -244,6 +244,40 @@ section {
 
 .lead strong { font-weight: 600; }
 
+/* Three-block row (01 / 02 / 03) */
+.trio {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-bottom: 1px solid var(--line);
+}
+
+@media (min-width: 740px) {
+  .trio { grid-template-columns: repeat(3, 1fr); }
+}
+
+.trio section {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.trio section:last-child { border-bottom: none; }
+
+.trio .lead {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 740px) {
+  .trio section {
+    padding: 3rem 1.75rem;
+    border-bottom: none;
+  }
+  .trio section + section { border-left: 1px solid var(--line); }
+  /* pull the inner padding to the grid edges */
+  .trio section:first-child { padding-left: 0; }
+  .trio section:last-child { padding-right: 0; }
+}
+
 /* Contact */
 .contact h2 {
   font-size: 1.8rem;
