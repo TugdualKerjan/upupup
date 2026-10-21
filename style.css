@@ -109,6 +109,54 @@ main {
   margin-bottom: 2rem;
 }
 
+/* "Offerte" stamp */
+.stamp {
+  position: absolute;
+  z-index: 2;
+  top: 1.75rem;
+  right: 1.75rem;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.92);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotate(-11deg);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+.stamp::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(255,255,255,0.55);
+  border-radius: 50%;
+}
+
+.stamp strong {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 560px) {
+  .stamp {
+    width: 96px;
+    height: 96px;
+    font-size: 0.62rem;
+    top: 1rem;
+    right: 1rem;
+  }
+  .stamp strong { font-size: 0.85rem; }
+}
+
 .hero-sub {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-size: 0.82rem;
