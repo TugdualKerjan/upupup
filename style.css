@@ -69,9 +69,17 @@ main {
   background: #e8e8e8;
 }
 
+.about p {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin: 3rem auto 0;
+  max-width: 560px;
+}
+
 .contact {
   text-align: center;
-  margin: 4rem 0;
+  margin: 3rem 0 4rem;
 }
 
 .contact h2 {
