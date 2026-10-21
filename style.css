@@ -109,6 +109,14 @@ main {
   margin-bottom: 2rem;
 }
 
+.hero-sub {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: rgba(255,255,255,0.82);
+  margin: 1.1rem 0 0;
+}
+
 /* Call to action */
 .cta {
   display: inline-block;
@@ -131,6 +139,51 @@ main {
 }
 
 .cta.dark:hover { background: var(--ink); color: #fff; }
+
+/* Specs strip */
+.specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 0;
+}
+
+@media (min-width: 680px) {
+  .specs { grid-template-columns: repeat(4, 1fr); }
+}
+
+.specs > div {
+  background: var(--bg);
+  padding: 1.4rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.specs .k {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+}
+
+.specs .v {
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Rarity line */
+.rare {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
 
 /* Full-width image band */
 .band {
