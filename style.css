@@ -252,6 +252,34 @@ section {
   margin: 0 0 0.75rem;
 }
 
+.lead-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 1.5rem;
+  max-width: 560px;
+}
+
+.lead-form .phone {
+  flex: 1 1 220px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.1rem;
+  border: 1px solid var(--ink);
+  background: #fff;
+  color: var(--ink);
+  border-radius: 0;
+}
+
+.lead-form .phone::placeholder { color: var(--muted); }
+
+.lead-form .phone:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+
+.lead-form .cta { border: 1px solid var(--ink); cursor: pointer; }
+
 .contact-row {
   display: flex;
   flex-wrap: wrap;
