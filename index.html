@@ -4,90 +4,236 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>3UP</title>
+  <title>3UP · Ateliers et camps d'informatique pour enfants</title>
   <meta name="description"
-    content="De l'aide en tête-à-tête pour prendre en main vos outils informatiques. La formation façon 2026.">
+    content="Camps, ateliers et interventions en classe pour les 6–16 ans en Suisse romande. 8 enfants max., chaque enfant repart avec ce qu'il a construit.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Silkscreen&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <nav class="topbar">
-    <a class="brand" href="/">
-      <img src="images/logo.svg" alt="" class="brand-mark">
+    <a class="brand" href="./">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <polyline points="6,30 13,23 20,30" />
+        <polyline points="13,23 20,16 27,23" />
+        <polyline class="top" points="20,16 27,9 34,16" />
+      </svg>
       <span class="brand-name">3UP</span>
     </a>
-    <span class="brand-loc">Suisse romande · Lausanne</span>
+    <div class="nav-links">
+      <a href="#camps">Camps</a>
+      <a href="#ecoles">Écoles</a>
+      <a class="nav-cta" href="#inscription">Inscription</a>
+    </div>
   </nav>
 
-  <section class="hero">
-    <img class="hero-bg" src="images/photo-1.jpg" alt="Accompagnement en tête-à-tête devant un ordinateur">
-    <div class="hero-inner">
-      <h1>We teach the man to fish.</h1>
-      <span class="cta-wrap">
-        <a class="cta" href="#contact">Contactez-moi pour organiser une séance →</a>
-        <span class="badge">1ère séance offerte</span>
-      </span>
-      <p class="hero-sub">Nous vous rappelons le jour même. Séance dès le lendemain, dans vos bureaux.</p>
+  <header class="hero">
+    <div class="inner">
+      <p class="px hero-kicker">Informatique · Robotique · IA · 6–16 ans</p>
+      <h1>Ils ne regardent pas l'écran. <span class="hl">Ils le programment.</span></h1>
+      <p class="hero-sub">Camps de vacances, club du mercredi et interventions en classe en Suisse romande. Petits groupes, vrais
+        projets&nbsp;: chaque enfant repart avec ce qu'il a construit.</p>
+      <div class="hero-actions">
+        <span class="cta-wrap">
+          <a class="cta" href="#inscription">Inscrire mon enfant →</a>
+          <span class="badge">−60 CHF avant le 31.01</span>
+        </span>
+        <a class="cta ghost" href="#ecoles">Vous êtes une école&nbsp;?</a>
+      </div>
     </div>
+  </header>
+
+  <section class="facts" aria-label="En bref">
+    <div><span class="k">Âges</span><span class="v">6 à 16 ans</span></div>
+    <div><span class="k">Groupe</span><span class="v">8 enfants max.</span></div>
+    <div><span class="k">Projet</span><span class="v">Un projet fini par enfant</span></div>
+    <div><span class="k">Lieux</span><span class="v">Lausanne · Morges · Nyon</span></div>
   </section>
 
-  <!-- <section class="specs">
-    <div><span class="k">Durée</span><span class="v">2 heures</span></div>
-    <div><span class="k">Format</span><span class="v">en présentiel, ensemble</span></div>
-    <div><span class="k">Lieu</span><span class="v">on vient à vous</span></div>
-    <div><span class="k">Délai</span><span class="v">dès le lendemain</span></div>
-  </section> -->
-
   <main>
-    <div class="trio">
-      <section class="intro">
-        <p class="eyebrow">Principe</p>
-        <p class="lead">
-          Avec <b>3UP</b>, la formation façon 2026&nbsp;: <strong>moins d'infos génériques,
-            plus d'accompagnement.</strong>
-        </p>
-      </section>
+    <section id="niveaux" class="block">
+      <div class="block-head">
+        <span class="tag">Les 3 niveaux</span>
+        <h2>Trois chevrons, trois niveaux.</h2>
+        <p>Chaque enfant commence au niveau qui correspond à son âge et à son expérience. À chaque projet terminé, il reçoit une carte de niveau.</p>
+      </div>
+      <div class="levels">
+        <article class="lvl">
+          <div class="lvl-top"><b class="px">UP 1</b><span class="pips"><i class="on"></i><i></i><i></i></span></div>
+          <span class="age">6–8 ans</span>
+          <h3>J'utilise</h3>
+          <p>Logique, séquences, premiers robots. On commence sans écran, puis on passe aux blocs.</p>
+          <p class="make">Il fabrique un robot qui suit un parcours.</p>
+        </article>
+        <article class="lvl">
+          <div class="lvl-top"><b class="px">UP 2</b><span class="pips"><i class="on"></i><i class="on"></i><i></i></span></div>
+          <span class="age">9–12 ans</span>
+          <h3>Je crée</h3>
+          <p>Jeux vidéo, micro:bit, premiers sites web. On passe des blocs au vrai code.</p>
+          <p class="make">Il fabrique un jeu jouable, à montrer à toute la famille.</p>
+        </article>
+        <article class="lvl">
+          <div class="lvl-top"><b class="px">UP 3</b><span class="pips"><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+          <span class="age">13–16 ans</span>
+          <h3>Je comprends</h3>
+          <p>Python, IA, données, cybersécurité. Comment marche un modèle, comment repérer un deepfake.</p>
+          <p class="make">Il fabrique une IA entraînée sur ses propres images.</p>
+        </article>
+      </div>
+    </section>
 
-      <section class="about">
-        <p class="eyebrow">Notre approche</p>
-        <p class="lead">
-          Séances 1:1 qui permettent de <strong>vraiment</strong> accompagner la personne dans ses tâches informatiques.
-        </p>
-      </section>
+    <section id="camps" class="block">
+      <div class="block-head">
+        <span class="tag">Familles</span>
+        <h2>Camps, club et anniversaires</h2>
+      </div>
+      <div class="offers">
+        <article class="offer star">
+          <span class="stamp">Le plus demandé</span>
+          <span class="label">Relâches · Pâques · Été · Automne</span>
+          <h3>Camp de vacances</h3>
+          <p class="price">650 <small>CHF · 5 jours, 9 h – 16 h 30</small></p>
+          <ul>
+            <li>Repas de midi et goûters inclus</li>
+            <li>8 enfants par animateur</li>
+            <li>Démo du projet aux parents le vendredi</li>
+            <li>Formule demi-journées : 360 CHF</li>
+          </ul>
+          <p class="for">Fratrie −10&nbsp;%. Inscription avant le 31 janvier : −60 CHF.</p>
+        </article>
+        <article class="offer">
+          <span class="label">Toute l'année</span>
+          <h3>Club du mercredi</h3>
+          <p class="price">420 <small>CHF · trimestre, 10 × 1 h 30</small></p>
+          <ul>
+            <li>Un projet complet par trimestre</li>
+            <li>Carnet de niveaux suivi toute l'année</li>
+            <li>Première séance d'essai gratuite</li>
+          </ul>
+          <p class="for">Pour continuer entre deux camps.</p>
+        </article>
+        <article class="offer">
+          <span class="label">6–12 ans</span>
+          <h3>Anniversaire code</h3>
+          <p class="price">450 <small>CHF · 2 h, jusqu'à 10 enfants</small></p>
+          <ul>
+            <li>Chez vous ou dans notre salle</li>
+            <li>Chaque invité repart avec son mini-jeu</li>
+            <li>Tout le matériel est fourni</li>
+          </ul>
+          <p class="for">Un anniversaire dont on parle à la récré.</p>
+        </article>
+      </div>
+    </section>
 
-      <section class="guarantee">
-        <p class="eyebrow">Garantie</p>
-        <p class="lead">
-          Vous repartez <strong>à jour</strong>. À l'aise avec vos
-          outils, au niveau de ce qui se fait aujourd'hui.
-        </p>
-      </section>
-    </div>
+    <section id="ecoles" class="block schools">
+      <div class="block-head">
+        <span class="tag">Écoles et communes</span>
+        <h2>L'éducation numérique, co-animée en classe.</h2>
+        <p>On ne vous envoie pas en formation. On vient dans votre classe, on anime avec vous, et à la fin de la séquence vous animez seul·e, avec notre soutien. Les contenus suivent l'éducation numérique du Plan d'études romand.</p>
+      </div>
+      <div class="offers">
+        <article class="offer">
+          <span class="stamp">1ère offerte</span>
+          <span class="label">Classe entière</span>
+          <h3>Intervention en classe</h3>
+          <p class="price">290 <small>CHF HT · 2 périodes</small></p>
+          <ul>
+            <li>2 animateurs, matériel apporté</li>
+            <li>Fiche pour l'enseignant à la sortie</li>
+          </ul>
+          <p class="for">La première intervention de chaque établissement est offerte.</p>
+        </article>
+        <article class="offer star">
+          <span class="label">Séquence complète</span>
+          <h3>Séquence éducation numérique</h3>
+          <p class="price">1'500 <small>CHF HT · 6 interventions</small></p>
+          <ul>
+            <li>Co-animation avec l'enseignant</li>
+            <li>L'enseignant anime la 6<sup>e</sup> séance, on l'épaule</li>
+            <li>Kit de robots prêté pendant 4 semaines</li>
+          </ul>
+          <p class="for">Vos élèves apprennent, et vous devenez autonome.</p>
+        </article>
+        <article class="offer">
+          <span class="label">Communes, APE</span>
+          <h3>Atelier parascolaire</h3>
+          <p class="price">190 <small>CHF HT · séance de 1 h 30</small></p>
+          <ul>
+            <li>12 enfants max., 2 animateurs</li>
+            <li>Programme sur l'année scolaire</li>
+          </ul>
+          <p class="for">Facturé à la commune ou à l'association.</p>
+        </article>
+      </div>
+      <p class="aside">Entreprises : camp pour les enfants de votre personnel pendant les vacances, 5'200 CHF HT la semaine pour 12 enfants. <a href="#inscription">Nous écrire</a>.</p>
+    </section>
 
-    <section class="contact" id="contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Prêt à passer à 2026&nbsp;?</h2>
-      <p class="rare">Quelques créneaux par mois.</p>
+    <section id="confiance" class="block">
+      <div class="block-head">
+        <span class="tag">Confiance</span>
+        <h2>Nos engagements</h2>
+      </div>
+      <div class="trust">
+        <div><b>Encadrement vérifié</b><p>Chaque animateur fournit un extrait spécial du casier judiciaire et un brevet de premiers secours à jour.</p></div>
+        <div><b>Aucun compte en ligne</b><p>Aucun compte n'est créé au nom de votre enfant. Nos machines sont fournies et réinitialisées après chaque groupe.</p></div>
+        <div><b>Pas de visage sans accord</b><p>Sur nos réseaux, on montre les écrans et les mains, jamais un visage sans votre accord écrit.</p></div>
+        <div><b>Un tiers hors écran</b><p>Robots, activités débranchées et jeux dehors font partie de chaque camp.</p></div>
+        <div><b>Équipe formée à l'EPFL</b><p>Nos programmes sont relus par un enseignant en activité.</p></div>
+        <div><b>Satisfait ou remboursé</b><p>Si votre enfant n'accroche pas après le premier jour, on vous rembourse le reste de la semaine.</p></div>
+      </div>
+    </section>
+
+    <section id="inscription" class="block signup">
+      <div class="block-head">
+        <span class="tag">Inscription</span>
+        <h2>On vous rappelle aujourd'hui.</h2>
+        <p>Laissez vos coordonnées. On vous rappelle le jour même pour choisir le camp, le niveau ou la date d'intervention.</p>
+      </div>
       <form class="lead-form" action="https://formsubmit.co/tkerjan@outlook.com" method="POST">
         <input type="hidden" name="_cc" value="elior.papiernik@gmail.com">
-        <input type="hidden" name="_subject" value="Nouvelle demande de séance — 3UP">
+        <input type="hidden" name="_subject" value="Nouvelle demande — 3UP Kids">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <input type="hidden" name="_next" value="http://tugdual.fr/upupup/merci.html">
-        <input class="phone" type="tel" name="Téléphone" inputmode="tel" placeholder="Votre numéro de téléphone"
-          required>
-        <span class="cta-wrap">
-          <button class="cta dark" type="submit">Contactez-moi pour organiser une séance →</button>
-          <span class="badge">1ère séance offerte</span>
+
+        <fieldset class="who">
+          <legend>Vous êtes</legend>
+          <label><input type="radio" name="Profil" value="Parent" checked> Parent</label>
+          <label><input type="radio" name="Profil" value="École"> École</label>
+          <label><input type="radio" name="Profil" value="Commune / APE"> Commune / APE</label>
+          <label><input type="radio" name="Profil" value="Entreprise"> Entreprise</label>
+        </fieldset>
+
+        <label class="field"><span>Nom</span><input id="f-nom" type="text" name="Nom" autocomplete="name" required></label>
+        <label class="field"><span>Téléphone</span><input id="f-tel" type="tel" name="Téléphone" inputmode="tel" autocomplete="tel" required></label>
+        <label class="field"><span>Âge de l'enfant ou degré de la classe</span><input id="f-age" type="text" name="Âge / degré" placeholder="ex. 10 ans, ou 7P"></label>
+        <label class="field"><span>Intéressé·e par</span>
+          <select id="f-offre" name="Offre">
+            <option>Camp de vacances</option>
+            <option>Club du mercredi</option>
+            <option>Anniversaire code</option>
+            <option>Intervention en classe</option>
+            <option>Atelier parascolaire</option>
+            <option>Camp entreprise</option>
+          </select>
+        </label>
+        <span class="cta-wrap submit">
+          <button class="cta dark" type="submit">Être rappelé aujourd'hui →</button>
         </span>
       </form>
-      <p class="rare">Ou par e-mail&nbsp;: <a class="mail" href="mailto:contact@upupup.ch">contact@upupup.ch</a></p>
+      <p class="mail-line">Ou par e-mail&nbsp;: <a href="mailto:contact@upupup.ch">contact@upupup.ch</a></p>
     </section>
   </main>
 
   <footer>
-    <span>3UP</span>
+    <span class="px">3UP</span>
     <span>Suisse romande · Lausanne</span>
   </footer>
 </body>
